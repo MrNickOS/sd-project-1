@@ -28,3 +28,16 @@ Para desplegar Kubernetes, se hizo uso de los siguientes recursos.
 Primeramente, se debe instalar MiniKube para distribuciones Linux, utilizando el siguiente comando:
 
 ``` curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.24.1/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/ ```
+
+Luego se debe consignar las siguientes líneas en consola:
+
+```
+cd /home/distribuidos/Documents/talleres/sd-project/kubernetes/
+minikube start
+minikube status
+```
+
+Si esto es correcto, veremos que el servicio de kubectl está corriendo con una dirección IP NAT
+por defecto en el segmento 192.168.99.0/24 (generalmente, es 192.168.99.100).
+
+'imagen aqui'
