@@ -23,8 +23,8 @@ Para desplegar el proyecto, se hizo uso de los siguientes recursos.
   * Equipo cliente Ubuntu 16.04
   * Minikube para Linux
   * Docker-Compose
-  * Cuenta en Docker Cloud
-  
+  * Cuenta en Docker Cloud.
+
 Primeramente, se debe instalar MiniKube para distribuciones Linux, utilizando el siguiente comando:
 
 ``` curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.24.1/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/ ```
