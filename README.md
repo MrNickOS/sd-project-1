@@ -19,6 +19,8 @@ Un cluster consta de dos componentes.
   para gestionar contenedores (ejemplo, Docker). En general, cada nodo se comunica con el Maestro
   mediante el API Kubernetes.
   
+![Evidencia](https://github.com/MrNickOS/sd-project-1/blob/A00052208/00.svg)
+  
 ### Implementación en Docker
 
 Para desplegar el proyecto, se hizo uso de los siguientes recursos.
@@ -42,7 +44,7 @@ minikube status
 Si esto es correcto, veremos que el servicio de kubectl está corriendo con una dirección IP NAT
 por defecto en el segmento 192.168.99.0/24 (generalmente, es 192.168.99.100).
 
-'imagen aqui'
+![Evidencia](https://github.com/MrNickOS/sd-project-1/blob/A00052208/02.png)
 
 Ahora, para iniciar la aplicación de Docker, cambiamos a la carpeta que contenga sus archivos respectivos.
 En este paso, debemos tener una cuenta en Docker Cloud para poder gestionar la app remotamente, así 
@@ -57,9 +59,11 @@ docker push mrnick/web
 docker-compose up -d
 ```
 
-'imagen consola'
+![Evidencia](https://github.com/MrNickOS/sd-project-1/blob/A00052208/01.png)
 
-'imagen app funcionando'
+![Evidencia](https://github.com/MrNickOS/sd-project-1/blob/A00052208/03.png)
+
+![Evidencia](https://github.com/MrNickOS/sd-project-1/blob/A00052208/04.png)
 
 ### Escalamiento a Kubernetes
 
@@ -81,4 +85,7 @@ kubectl get svc
 
 Lo podemos apreciar en la siguiente gráfica.
 
-'imagen aqui'
+
+![Evidencia](https://github.com/MrNickOS/sd-project-1/blob/A00052208/05.png)
+
+![Evidencia](https://github.com/MrNickOS/sd-project-1/blob/A00052208/06.png)
