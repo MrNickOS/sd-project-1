@@ -19,6 +19,8 @@ Un cluster consta de dos componentes.
   para gestionar contenedores (ejemplo, Docker). En general, cada nodo se comunica con el Maestro
   mediante el API Kubernetes.
   
+### Implementación en Docker
+
 Para desplegar el proyecto, se hizo uso de los siguientes recursos.
   * Equipo cliente Ubuntu 16.04
   * Minikube para Linux
@@ -58,4 +60,6 @@ docker-compose up -d
 'imagen consola'
 
 'imagen app funcionando'
+
+### Escalamiento a Kubernetes
 
