@@ -19,7 +19,7 @@ Un cluster consta de dos componentes.
   para gestionar contenedores (ejemplo, Docker). En general, cada nodo se comunica con el Maestro
   mediante el API Kubernetes.
   
-Para desplegar Kubernetes, se hizo uso de los siguientes recursos.
+Para desplegar el proyecto, se hizo uso de los siguientes recursos.
   * Equipo cliente Ubuntu 16.04
   * Minikube para Linux
   * Docker-Compose
@@ -42,15 +42,20 @@ por defecto en el segmento 192.168.99.0/24 (generalmente, es 192.168.99.100).
 
 'imagen aqui'
 
-Ahora, para iniciar en el host anfitrión la aplicación de Docker, cambiamos a la carpeta que contenga sus
-archivos respectivos. Esto nos permitirá visualizar en un navegador web, accediendo a la VM Kubectl,
-la aplicación que está corriendo.
+Ahora, para iniciar la aplicación de Docker, cambiamos a la carpeta que contenga sus archivos respectivos.
+En este paso, debemos tener una cuenta en Docker Cloud para poder gestionar la app remotamente, así 
+como nuestro respectivo repositorio, para poder realizar un push al mismo. Luego, desplegamos la app
+con Docker-Compose. Esto nos permitirá visualizarla en un navegador web, usando la IP de VM Kubectl,
+y que está corriendo por el puerto 3005.
 
 ```
 ls /../docker/
 cd /../docker/
+docker push mrnick/web
 docker-compose up -d
 ```
+
 'imagen consola'
 
 'imagen app funcionando'
+
