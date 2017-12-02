@@ -63,3 +63,22 @@ docker-compose up -d
 
 ### Escalamiento a Kubernetes
 
+Kubernetes maneja un conjunto de contenedores para poner en funcionamiento un servicio: a este grupo
+se le conoce como POD. Para el proyecto, los POD incluyen contenedores de la aplicación web y un motor
+de Base de Datos, aprovisionados mediante archivos .yml. Los comandos a ingresar permiten levantar los
+PODs, consultar su estado, descripción de los servicios y su IP asociada en el Cluster:
+
+```
+cd /../kubernetes/
+kubectl create -f db-pod.yml
+kubectl create -f db-svc.yml
+kubectl create -f web-pod.yml
+kubectl create -f web-svc.yml
+kubectl create -f web-rc.yml
+kubectl get pods
+kubectl get svc
+```
+
+Lo podemos apreciar en la siguiente gráfica.
+
+'imagen aqui'
