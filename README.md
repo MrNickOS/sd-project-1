@@ -26,4 +26,5 @@ Para desplegar Kubernetes, se hizo uso de los siguientes recursos.
   * Cuenta en Docker Cloud
   
 Primeramente, se debe instalar MiniKube para distribuciones Linux, utilizando el siguiente comando:
+
 ``` curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.24.1/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/ ```
