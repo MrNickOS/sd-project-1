@@ -1,0 +1,9 @@
+web:
+  image: mrnick/web
+  ports:
+   - "3005:5000"
+  links:
+   - redis
+redis:
+  image: redis:alpine
+  container_name: redis
