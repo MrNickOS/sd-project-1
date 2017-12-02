@@ -19,7 +19,7 @@ Un cluster consta de dos componentes.
   para gestionar contenedores (ejemplo, Docker). En general, cada nodo se comunica con el Maestro
   mediante el API Kubernetes.
   
-![Evidencia](https://github.com/MrNickOS/sd-project-1/blob/A00052208/00.svg)
+![Evidencia](https://github.com/MrNickOS/sd-project-1/blob/A00052208/00.png)
   
 ### Implementación en Docker
 
@@ -89,3 +89,5 @@ Lo podemos apreciar en la siguiente gráfica.
 ![Evidencia](https://github.com/MrNickOS/sd-project-1/blob/A00052208/05.png)
 
 ![Evidencia](https://github.com/MrNickOS/sd-project-1/blob/A00052208/06.png)
+
+URL: https://github.com/MrNickOS/sd-project-1/tree/A00052208
