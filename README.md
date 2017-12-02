@@ -41,3 +41,16 @@ Si esto es correcto, veremos que el servicio de kubectl está corriendo con una 
 por defecto en el segmento 192.168.99.0/24 (generalmente, es 192.168.99.100).
 
 'imagen aqui'
+
+Ahora, para iniciar en el host anfitrión la aplicación de Docker, cambiamos a la carpeta que contenga sus
+archivos respectivos. Esto nos permitirá visualizar en un navegador web, accediendo a la VM Kubectl,
+la aplicación que está corriendo.
+
+```
+ls /../docker/
+cd /../docker/
+docker-compose up -d
+```
+'imagen consola'
+
+'imagen app funcionando'
